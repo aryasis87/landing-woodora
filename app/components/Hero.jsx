@@ -27,7 +27,7 @@ const Hero = () => {
   const products = [
     {
       name: "Sofa Minimalis",
-      image: "/images/sofa.webp",
+      image: "/images/sofa.jpg",
       color: "bg-pink-100",
     },
     {
@@ -52,7 +52,7 @@ const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 py-16 md:py-24 px-4 max-w-screen">
       <Head>
-        <link rel="preload" href="/images/sofa.webp" as="image" />
+        <link rel="preload" href="/images/sofa.jpg" as="image" />
       </Head>
       
       {/* Brand Logo/Title */}
