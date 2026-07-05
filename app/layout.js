@@ -1,30 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lora, Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const lora = Lora({ variable: "--font-lora", subsets: ["latin"], weight: ["500", "600", "700"] });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 export const metadata = {
-  title: "Woodoora",
-  description:
-    "Temukan koleksi furniture eksklusif dari FurniCraft yang akan mengubah rumah Anda menjadi ruang hidup yang indah, nyaman, dan fungsional.",
-  keywords: "furniture modern, mebel kayu, sofa nyaman, set kamar tidur, furniture kantor, furnitur ruang tamu",
-  author: "Sanzystore",
+  title: "Woodora — Furnitur Berkualitas untuk Rumah Impian",
+  description: "Woodora: furnitur kayu solid bergaya minimalis — nyaman, tahan lama, dan cocok untuk segala interior.",
+  keywords: "furniture modern, mebel kayu, sofa nyaman, furnitur ruang tamu",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="id">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${lora.variable} ${inter.variable} antialiased`}>
         {children}
       </body>
     </html>
