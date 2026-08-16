@@ -28,21 +28,21 @@ const Hero = () => {
     {
       name: "Sofa Minimalis",
       image: "/images/sofa.jpg",
-      color: "bg-pink-100",
+      color: "bg-brass-w/12",
     },
     {
       name: "Meja Kayu Solid",
-      image: "/images/table.webp",
-      color: "bg-blue-100",
+      image: "/images/bg3.jpg",
+      color: "bg-brass-w/12",
     },
     {
       name: "Rak Buku Elegan",
-      image: "/images/bookshelf.webp",
-      color: "bg-yellow-100",
+      image: "/images/bg4.jpg",
+      color: "bg-brass-w/12",
     },
   ];
 
-  // Gambar avatar dari internet
+  // Avatar diambil dari berkas lokal di public/images
   const avatars = [
     "/images/pp2.png",
     "/images/pp5.png",
@@ -50,7 +50,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-purple-50 py-16 md:py-24 px-4 max-w-screen">
+    <section className="relative overflow-hidden bg-gradient-to-br from-brass-w to-brass-w py-16 md:py-24 px-4 max-w-screen">
       <Head>
         <link rel="preload" href="/images/sofa.jpg" as="image" />
       </Head>
@@ -58,16 +58,16 @@ const Hero = () => {
       {/* Brand Logo/Title */}
       <div className="absolute top-6 left-6 z-50">
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
           {/* You can replace this with your actual logo image */}
-          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-            <span className="text-white font-bold text-sm">W</span>
+          <div className="w-8 h-8 bg-gradient-to-r from-brass-w to-brass-w rounded-full flex items-center justify-center">
+            <span className="text-linen font-bold text-sm">W</span>
           </div>
-          <span className="text-xl font-bold text-gray-800">Woodora</span>
+          <span className="text-xl font-bold text-walnut">Woodora</span>
         </motion.div>
       </div>
       
@@ -85,7 +85,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute blur-xl top-10 left-10 w-24 h-24 rounded-full bg-yellow-200 opacity-20"
+          className="absolute blur-xl top-10 left-10 w-24 h-24 rounded-full bg-brass-w/12 opacity-20"
         />
         <motion.div
           style={{ willChange: 'transform' }}
@@ -99,7 +99,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="absolute blur-xl bottom-20 right-20 w-32 h-32 rounded-full bg-pink-200 opacity-20"
+          className="absolute blur-xl bottom-20 right-20 w-32 h-32 rounded-full bg-brass-w/12 opacity-20"
         />
       </div>
 
@@ -122,21 +122,21 @@ const Hero = () => {
                 duration: 4,
                 repeat: Infinity,
               }}
-              className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
+              className="text-4xl md:text-5xl lg:text-6xl font-bold text-walnut mb-6"
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brass-w to-brass-w">
                 Furnitur Berkualitas
               </span>{" "}
               untuk Rumah Impian
             </motion.h1>
             
-            <motion.p variants={item} className="text-lg md:text-xl text-gray-700 mb-8">
+            <motion.p variants={item} className="text-lg md:text-xl text-walnut mb-8">
               Temukan koleksi furniture eksklusif yang akan mengubah rumah Anda menjadi ruang hidup yang indah dan nyaman.
             </motion.p>
             
             {/* Product highlights */}
             <motion.div variants={item} className="mb-8">
-              <h3 className="font-semibold text-gray-800 mb-3">Koleksi Kami:</h3>
+              <h3 className="font-semibold text-walnut mb-3">Koleksi Kami:</h3>
               <div className="flex flex-wrap gap-3">
                 {products.map((product, index) => (
                   <motion.div
@@ -144,7 +144,7 @@ const Hero = () => {
                     whileHover={{ y: -5 }}
                     className={`px-4 py-2 rounded-full ${product.color} shadow-sm flex items-center`}
                   >
-                    <span className="text-sm font-medium text-gray-800">
+                    <span className="text-sm font-medium text-walnut">
                       {product.name}
                     </span>
                   </motion.div>
@@ -157,7 +157,7 @@ const Hero = () => {
                 aria-label="Lihat Katalog Lengkap"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
+                className="px-8 py-3 bg-gradient-to-r from-brass-w to-brass-w text-linen rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 Lihat Katalog Lengkap
               </motion.button>
@@ -165,7 +165,7 @@ const Hero = () => {
                 aria-label="Konsultasi Desain Gratis"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
+                className="px-8 py-3 bg-linen text-brass-w border-2 border-brass-w/30 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
               >
                 Konsultasi Desain Gratis
               </motion.button>
@@ -184,7 +184,7 @@ const Hero = () => {
                 drag
                 dragConstraints={constraintsRef}
                 whileHover={{ scale: 1.02 }}
-                className="relative z-10 bg-white p-6 rounded-2xl shadow-xl border border-gray-100"
+                className="relative z-10 bg-linen p-6 rounded-2xl shadow-xl border border-walnut/12"
               >
                 <div className="aspect-auto mb-4 overflow-hidden rounded-lg relative h-full">
                   <Image
@@ -200,11 +200,11 @@ const Hero = () => {
                 
                 <div className="flex justify-between items-start">
                   <div>
-                    <h3 className="font-bold text-xl text-gray-900">Paket Ruang Tamu Lengkap</h3>
-                    <p className="text-gray-700">Untuk ruang 3x4 meter</p>
+                    <h3 className="font-bold text-xl text-walnut">Paket Ruang Tamu Lengkap</h3>
+                    <p className="text-walnut">Untuk ruang 3x4 meter</p>
                   </div>
-                  <div className="bg-yellow-100 px-3 py-1 rounded-full">
-                    <span className="font-bold text-yellow-800">Terlaris!</span>
+                  <div className="bg-brass-w/12 px-3 py-1 rounded-full">
+                    <span className="font-bold text-brass-w">Terlaris!</span>
                   </div>
                 </div>
                 
@@ -224,11 +224,11 @@ const Hero = () => {
                         </div>
                       ))}
                     </div>
-                    <span className="ml-2 text-sm text-gray-600">+120 pembeli</span>
+                    <span className="ml-2 text-sm text-grain">+120 pembeli</span>
                   </div>
                   <div className="text-right">
-                    <p className="text-sm text-gray-600 line-through">Rp 4.999.000</p>
-                    <p className="font-bold text-lg text-purple-600">Rp 2.999.000</p>
+                    <p className="text-sm text-grain line-through">Rp 4.999.000</p>
+                    <p className="font-bold text-lg text-brass-w">Rp 2.999.000</p>
                   </div>
                 </div>
               </motion.div>
@@ -238,7 +238,7 @@ const Hero = () => {
                 drag
                 dragConstraints={constraintsRef}
                 whileHover={{ scale: 1.1 }}
-                className="absolute -top-8 -left-8 w-24 h-32 bg-white rounded-lg shadow-md p-2 border border-gray-200 z-20 overflow-hidden"
+                className="absolute -top-8 -left-8 w-24 h-32 bg-linen rounded-lg shadow-md p-2 border border-walnut/12 z-20 overflow-hidden"
                 style={{ willChange: 'transform' }}
                 animate={{
                   y: [0, -5, 0],
@@ -260,12 +260,12 @@ const Hero = () => {
                     sizes="96px"
                   />
                 </div>
-                <p className="text-xs font-medium text-gray-800 truncate">Meja Makan</p>
+                <p className="text-xs font-medium text-walnut truncate">Meja Makan</p>
                 <div className="flex items-center mt-1">
-                  <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-3 h-3 text-brass-w" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                   </svg>
-                  <span className="text-xs text-gray-600 ml-1">4.9</span>
+                  <span className="text-xs text-grain ml-1">4.9</span>
                 </div>
               </motion.div>
               
@@ -273,7 +273,7 @@ const Hero = () => {
                 drag
                 dragConstraints={constraintsRef}
                 whileHover={{ scale: 1.1 }}
-                className="absolute bottom-34 -right-4 w-28 h-36 bg-white rounded-lg shadow-md p-2 border border-gray-200 z-20 overflow-hidden"
+                className="absolute bottom-34 -right-4 w-28 h-36 bg-linen rounded-lg shadow-md p-2 border border-walnut/12 z-20 overflow-hidden"
                 style={{ willChange: 'transform' }}
                 animate={{
                   y: [0, 5, 0],
@@ -296,15 +296,15 @@ const Hero = () => {
                     sizes="112px"
                   />
                 </div>
-                <p className="text-xs font-medium text-gray-800 truncate">Kursi Tamu</p>
+                <p className="text-xs font-medium text-walnut truncate">Kursi Tamu</p>
                 <div className="flex items-center justify-between mt-1">
                   <div className="flex items-center">
-                    <svg className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-3 h-3 text-brass-w" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
-                    <span className="text-xs text-gray-600 ml-1">4.8</span>
+                    <span className="text-xs text-grain ml-1">4.8</span>
                   </div>
-                  <span className="text-xs px-1 bg-green-100 text-green-800 rounded">Baru!</span>
+                  <span className="text-xs px-1 bg-brass-w/12 text-brass-w rounded">Baru!</span>
                 </div>
               </motion.div>
             </div>
@@ -323,7 +323,7 @@ const Hero = () => {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute -bottom-20 -right-20 w-40 h-40 rounded-full border-8 border-dashed border-purple-200 opacity-50"
+        className="absolute -bottom-20 -right-20 w-40 h-40 rounded-full border-8 border-dashed border-brass-w/30 opacity-50"
       />
     </section>
   );

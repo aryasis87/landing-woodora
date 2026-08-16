@@ -1,28 +1,38 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ==========================================================================
+   woodora — bahasa rupa LEMBAR KAYU.
+   Perabot kayu dijual lewat serat dan ukuran. Rupanya meniru lembar kerja
+   tukang: linen, walnut, dan garis ukur bertitik.
+   ========================================================================== */
+
+@theme {
+  --color-walnut: #3b2a1d; /* walnut */
+  --color-walnut-2: #523a28;
+  --color-linen: #f6f2ea; /* linen */
+  --color-linen-2: #e7dfd1;
+  --color-grain: #6d5844; /* teks sekunder */
+  --color-brass-w: #8c5f2c; /* kuningan */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@layer base {
+  body { font-family: var(--font-inter), system-ui, sans-serif; background-color: var(--color-linen); color: var(--color-grain); }
+  h1, h2, h3 { font-family: var(--font-lora), Georgia, serif; letter-spacing: -0.02em; }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.measure-line { background-image: linear-gradient(to right, currentColor 0 1px, transparent 1px 8px); background-size: 8px 1px; background-repeat: repeat-x; height: 1px; opacity: 0.5; }
+.spec-caps { font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), system-ui, sans-serif;
+:where(a, button, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--color-brass-w);
+  outline-offset: 3px;
 }
-
-h1, h2, h3 { font-family: var(--font-lora), Georgia, serif; letter-spacing: -0.005em; }

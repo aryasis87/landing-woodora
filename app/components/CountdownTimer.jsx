@@ -80,7 +80,7 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-pink-50 to-purple-50 overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-brass-w to-brass-w overflow-hidden">
       {/* Decorative elements */}
       <motion.div
         animate={{
@@ -93,7 +93,7 @@ const CountdownTimer = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="hidden lg:block absolute left-20 top-1/4 w-32 h-32 rounded-full bg-purple-200/20"
+        className="hidden lg:block absolute left-20 top-1/4 w-32 h-32 rounded-full bg-brass-w/20"
       />
       
       <motion.div
@@ -108,7 +108,7 @@ const CountdownTimer = () => {
           ease: "easeInOut",
           delay: 2
         }}
-        className="hidden lg:block absolute right-20 bottom-1/4 w-40 h-40 rounded-full bg-pink-200/20"
+        className="hidden lg:block absolute right-20 bottom-1/4 w-40 h-40 rounded-full bg-brass-w/20"
       />
 
       <div className="container mx-auto px-4">
@@ -121,23 +121,23 @@ const CountdownTimer = () => {
         >
           <motion.div 
             variants={item}
-            className="inline-flex items-center justify-center p-4 bg-white rounded-full shadow-lg mb-6"
+            className="inline-flex items-center justify-center p-4 bg-linen rounded-full shadow-lg mb-6"
           >
-            <Rocket className="w-10 h-10 text-purple-600" />
-            <PartyPopper className="w-10 h-10 text-pink-600 -ml-3" />
+            <Rocket className="w-10 h-10 text-brass-w" />
+            <PartyPopper className="w-10 h-10 text-brass-w -ml-3" />
           </motion.div>
           <motion.h2 
             variants={item}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4"
+            className="text-3xl md:text-4xl font-bold text-walnut mb-4"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brass-w to-brass-w">
               Waktu Terbatas!
             </span>{" "}
             Diskon Spesial
           </motion.h2>
           <motion.p 
             variants={item}
-            className="text-lg text-gray-600 max-w-2xl mx-auto"
+            className="text-lg text-grain max-w-2xl mx-auto"
           >
             Daftar sekarang dan dapatkan potongan harga 30% sebelum promo berakhir!
           </motion.p>
@@ -157,10 +157,10 @@ const CountdownTimer = () => {
               whileHover="hover"
               className="flex flex-col items-center"
             >
-              <div className="w-24 h-24 bg-white rounded-xl shadow-lg flex flex-col items-center justify-center relative overflow-hidden">
+              <div className="w-24 h-24 bg-linen rounded-xl shadow-lg flex flex-col items-center justify-center relative overflow-hidden">
                 {/* Animated background */}
                 <motion.div 
-                  className={`absolute inset-0 ${index % 2 === 0 ? 'bg-pink-100' : 'bg-purple-100'} opacity-30`}
+                  className={`absolute inset-0 ${index % 2 === 0 ? 'bg-brass-w/12' : 'bg-brass-w/12'} opacity-30`}
                   animate={{
                     scale: [1, 1.2, 1],
                     opacity: [0.3, 0.5, 0.3]
@@ -172,12 +172,12 @@ const CountdownTimer = () => {
                   }}
                 />
                 
-                <span className="text-3xl font-bold text-gray-900 z-10">
+                <span className="text-3xl font-bold text-walnut z-10">
                   {timeLeft[unit.name].toString().padStart(2, '0')}
                 </span>
                 <div className="flex items-center mt-2 z-10">
                   {unit.icon}
-                  <span className="ml-2 text-xs font-medium text-gray-500 uppercase">
+                  <span className="ml-2 text-xs font-medium text-grain uppercase">
                     {unit.name}
                   </span>
                 </div>
@@ -199,7 +199,7 @@ const CountdownTimer = () => {
               boxShadow: "0 10px 25px -5px rgba(236, 72, 153, 0.3)"
             }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
+            className="px-8 py-3 bg-gradient-to-r from-brass-w to-brass-w text-linen rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
           >
             Daftar Sekarang
           </motion.button>
@@ -214,7 +214,7 @@ const CountdownTimer = () => {
               repeat: Infinity,
               ease: "easeInOut"
             }}
-            className="mt-6 text-sm text-gray-500 flex items-center justify-center"
+            className="mt-6 text-sm text-grain flex items-center justify-center"
           >
             <AlarmClock className="w-4 h-4 mr-2" />
             Promo berakhir {targetDate.toLocaleDateString()}

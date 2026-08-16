@@ -15,8 +15,8 @@ const Pricing = () => {
         "Komunitas online",
         "Sertifikat partisipasi"
       ],
-      color: "bg-blue-100",
-      icon: <Star className="w-8 h-8 text-blue-600" />
+      color: "bg-brass-w/12",
+      icon: <Star className="w-8 h-8 text-brass-w" />
     },
     {
       name: "Kreator",
@@ -30,8 +30,8 @@ const Pricing = () => {
         "Feedback mentor",
         "Komunitas eksklusif"
       ],
-      color: "bg-purple-100",
-      icon: <Gem className="w-8 h-8 text-purple-600" />
+      color: "bg-brass-w/12",
+      icon: <Gem className="w-8 h-8 text-brass-w" />
     },
     {
       name: "Pro",
@@ -46,8 +46,8 @@ const Pricing = () => {
         "Portfolio review",
         "Sertifikat lengkap"
       ],
-      color: "bg-orange-100",
-      icon: <Rocket className="w-8 h-8 text-orange-600" />
+      color: "bg-brass-w/12",
+      icon: <Rocket className="w-8 h-8 text-brass-w" />
     }
   ];
 
@@ -89,7 +89,7 @@ const Pricing = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-indigo-50 to-purple-50 overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-brass-w to-brass-w overflow-hidden">
       {/* Decorative elements */}
       <motion.div
         animate={{
@@ -102,7 +102,7 @@ const Pricing = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="hidden lg:block absolute left-20 top-1/4 w-32 h-32 rounded-full bg-purple-200/20"
+        className="hidden lg:block absolute left-20 top-1/4 w-32 h-32 rounded-full bg-brass-w/20"
       />
       
       <motion.div
@@ -117,7 +117,7 @@ const Pricing = () => {
           ease: "easeInOut",
           delay: 2
         }}
-        className="hidden lg:block absolute right-20 bottom-1/4 w-40 h-40 rounded-full bg-indigo-200/20"
+        className="hidden lg:block absolute right-20 bottom-1/4 w-40 h-40 rounded-full bg-brass-w/20"
       />
 
       <div className="container mx-auto px-4">
@@ -128,16 +128,16 @@ const Pricing = () => {
           viewport={{ once: true, margin: "-100px" }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center justify-center p-4 bg-white rounded-full shadow-lg mb-6">
-            <Zap className="w-10 h-10 text-yellow-500" />
+          <div className="inline-flex items-center justify-center p-4 bg-linen rounded-full shadow-lg mb-6">
+            <Zap className="w-10 h-10 text-brass-w" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-indigo-500">
+          <h2 className="text-3xl md:text-4xl font-bold text-walnut mb-4">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brass-w to-brass-w">
               Pilihan Paket
             </span>{" "}
             Belajar
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-grain max-w-2xl mx-auto">
             Temukan paket yang paling sesuai dengan kebutuhan kreatif Anda!
           </p>
         </motion.div>
@@ -161,14 +161,14 @@ const Pricing = () => {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 }}
-                  className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-purple-500 to-indigo-500 text-white text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap shadow-md"
+                  className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-brass-w to-brass-w text-linen text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap shadow-md"
                 >
                   PILIHAN TERBAIK!
                 </motion.div>
               )}
               
               <motion.div 
-                className={`p-8 rounded-3xl shadow-lg border-2 ${plan.popular ? 'border-purple-300 bg-white' : 'border-white bg-white/90'} relative overflow-hidden`}
+                className={`p-8 rounded-3xl shadow-lg border-2 ${plan.popular ? 'border-brass-w/30 bg-linen' : 'border-white bg-linen/90'} relative overflow-hidden`}
               >
                 {/* Plan header */}
                 <div className="flex items-center mb-6">
@@ -176,10 +176,10 @@ const Pricing = () => {
                     {plan.icon}
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-800">{plan.name}</h3>
+                    <h3 className="text-2xl font-bold text-walnut">{plan.name}</h3>
                     <div className="flex items-end">
-                      <span className="text-3xl font-bold text-gray-900">{plan.price}</span>
-                      <span className="text-gray-500 ml-1">{plan.duration}</span>
+                      <span className="text-3xl font-bold text-walnut">{plan.price}</span>
+                      <span className="text-grain ml-1">{plan.duration}</span>
                     </div>
                   </div>
                 </div>
@@ -188,8 +188,8 @@ const Pricing = () => {
                 <ul className="mb-8 space-y-3">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle2 className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
+                      <CheckCircle2 className="w-5 h-5 text-brass-w mt-0.5 mr-2 flex-shrink-0" />
+                      <span className="text-walnut">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -201,7 +201,7 @@ const Pricing = () => {
                     boxShadow: "0 5px 15px rgba(124, 58, 237, 0.3)"
                   }}
                   whileTap={{ scale: 0.98 }}
-                  className={`w-full py-3 rounded-full font-semibold ${plan.popular ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'}`}
+                  className={`w-full py-3 rounded-full font-semibold ${plan.popular ? 'bg-gradient-to-r from-brass-w to-brass-w text-linen' : 'bg-linen text-walnut hover:bg-linen-2'}`}
                 >
                   Daftar Sekarang
                 </motion.button>
@@ -212,12 +212,12 @@ const Pricing = () => {
                     <motion.div 
                       animate={{ rotate: [0, 360] }}
                       transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                      className="absolute -right-10 -top-10 w-32 h-32 rounded-full border-8 border-dashed border-purple-200 opacity-30"
+                      className="absolute -right-10 -top-10 w-32 h-32 rounded-full border-8 border-dashed border-brass-w/30 opacity-30"
                     />
                     <motion.div 
                       animate={{ rotate: [360, 0] }}
                       transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-                      className="absolute -left-10 -bottom-10 w-40 h-40 rounded-full border-8 border-dashed border-indigo-200 opacity-30"
+                      className="absolute -left-10 -bottom-10 w-40 h-40 rounded-full border-8 border-dashed border-brass-w/30 opacity-30"
                     />
                   </>
                 )}
@@ -234,14 +234,14 @@ const Pricing = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-gray-600 mb-6">Butuh paket khusus untuk komunitas atau sekolah?</p>
+          <p className="text-grain mb-6">Butuh paket khusus untuk komunitas atau sekolah?</p>
           <motion.button
             whileHover={{ 
               scale: 1.03,
               boxShadow: "0 10px 25px -5px rgba(124, 58, 237, 0.3)"
             }}
             whileTap={{ scale: 0.98 }}
-            className="px-8 py-3 bg-white text-purple-600 border-2 border-purple-600 rounded-full font-medium shadow-lg hover:shadow-xl transition-all"
+            className="px-8 py-3 bg-linen text-brass-w border-2 border-brass-w/30 rounded-full font-medium shadow-lg hover:shadow-xl transition-all"
           >
             Hubungi Tim Kami
           </motion.button>

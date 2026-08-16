@@ -7,8 +7,8 @@ const ValueProposition = () => {
     {
       title: "Belajar Seru",
       description: "Metode pembelajaran interaktif yang membuat belajar terasa seperti bermain",
-      icon: <Sparkles className="w-10 h-10 text-yellow-500" />,
-      color: "bg-yellow-100",
+      icon: <Sparkles className="w-10 h-10 text-brass-w" />,
+      color: "bg-brass-w/12",
       animation: {
         y: [0, -10, 0],
         transition: {
@@ -21,8 +21,8 @@ const ValueProposition = () => {
     {
       title: "Komunitas Kreatif",
       description: "Bergabung dengan jaringan kreator muda dari seluruh Indonesia",
-      icon: <Users className="w-10 h-10 text-purple-600" />,
-      color: "bg-purple-100",
+      icon: <Users className="w-10 h-10 text-brass-w" />,
+      color: "bg-brass-w/12",
       animation: {
         rotate: [0, 5, -5, 0],
         transition: {
@@ -35,8 +35,8 @@ const ValueProposition = () => {
     {
       title: "Proyek Nyata",
       description: "Hasilkan karya nyata yang bisa dibanggakan dan ditunjukkan",
-      icon: <Rocket className="w-10 h-10 text-pink-600" />,
-      color: "bg-pink-100",
+      icon: <Rocket className="w-10 h-10 text-brass-w" />,
+      color: "bg-brass-w/12",
       animation: {
         scale: [1, 1.05, 1],
         transition: {
@@ -50,15 +50,15 @@ const ValueProposition = () => {
 
   const features = [
     {
-      icon: <Palette className="w-6 h-6 text-blue-600" />,
+      icon: <Palette className="w-6 h-6 text-brass-w" />,
       text: "Aktivitas seni & kerajinan"
     },
     {
-      icon: <BookOpen className="w-6 h-6 text-green-600" />,
+      icon: <BookOpen className="w-6 h-6 text-brass-w" />,
       text: "Materi pembelajaran interaktif"
     },
     {
-      icon: <Code className="w-6 h-6 text-orange-600" />,
+      icon: <Code className="w-6 h-6 text-brass-w" />,
       text: "Pengenalan teknologi kreatif"
     }
   ];
@@ -89,7 +89,7 @@ const ValueProposition = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50 overflow-hidden relative">
+    <section className="py-16 bg-gradient-to-br from-brass-w to-brass-w overflow-hidden relative">
       {/* Decorative elements */}
       <motion.div
         animate={{
@@ -102,7 +102,7 @@ const ValueProposition = () => {
           repeat: Infinity,
           ease: "easeInOut"
         }}
-        className="hidden lg:block absolute left-20 top-1/4 w-32 h-32 rounded-full bg-purple-200/20"
+        className="hidden lg:block absolute left-20 top-1/4 w-32 h-32 rounded-full bg-brass-w/20"
       />
       
       <motion.div
@@ -117,7 +117,7 @@ const ValueProposition = () => {
           ease: "easeInOut",
           delay: 2
         }}
-        className="hidden lg:block absolute right-20 bottom-1/4 w-40 h-40 rounded-full bg-blue-200/20"
+        className="hidden lg:block absolute right-20 bottom-1/4 w-40 h-40 rounded-full bg-brass-w/20"
       />
 
       <div className="container mx-auto px-4 max-w-5xl">
@@ -130,22 +130,22 @@ const ValueProposition = () => {
         >
           <motion.div 
             variants={item}
-            className="inline-flex items-center justify-center p-4 bg-white rounded-full shadow-lg mb-6"
+            className="inline-flex items-center justify-center p-4 bg-linen rounded-full shadow-lg mb-6"
           >
-            <Sparkles className="w-10 h-10 text-purple-600" />
+            <Sparkles className="w-10 h-10 text-brass-w" />
           </motion.div>
           <motion.h2 
             variants={item}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 px-4"
+            className="text-3xl md:text-4xl font-bold text-walnut mb-4 px-4"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brass-w to-brass-w">
               Kenapa Memilih
             </span>{" "}
             Kami?
           </motion.h2>
           <motion.p 
             variants={item}
-            className="text-lg text-gray-600 max-w-2xl mx-auto px-4"
+            className="text-lg text-grain max-w-2xl mx-auto px-4"
           >
             Kami menawarkan pengalaman belajar yang unik dan menyenangkan untuk mengembangkan kreativitas
           </motion.p>
@@ -167,7 +167,7 @@ const ValueProposition = () => {
             >
               <motion.div 
                 animate={card.animation}
-                className={`p-8 rounded-3xl shadow-lg ${card.color} bg-white relative overflow-hidden h-full`}
+                className={`p-8 rounded-3xl shadow-lg ${card.color} bg-linen relative overflow-hidden h-full`}
                 whileHover={{ y: -10 }}
               >
                 <motion.div 
@@ -186,8 +186,8 @@ const ValueProposition = () => {
                   <div className="mb-6">
                     {card.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">{card.title}</h3>
-                  <p className="text-gray-600">{card.description}</p>
+                  <h3 className="text-xl font-bold text-walnut mb-3">{card.title}</h3>
+                  <p className="text-grain">{card.description}</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -200,11 +200,11 @@ const ValueProposition = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="bg-white rounded-3xl shadow-lg p-8 max-w-4xl mx-4 sm:mx-auto relative overflow-hidden"
+          className="bg-linen rounded-3xl shadow-lg p-8 max-w-4xl mx-4 sm:mx-auto relative overflow-hidden"
         >
           <motion.h3 
             variants={item}
-            className="text-2xl font-bold text-center text-gray-800 mb-8"
+            className="text-2xl font-bold text-center text-walnut mb-8"
           >
             Apa saja yang akan kamu dapatkan?
           </motion.h3>
@@ -220,10 +220,10 @@ const ValueProposition = () => {
                 className="flex items-start"
                 whileHover={{ x: 5 }}
               >
-                <div className="p-2 rounded-full bg-blue-50 mr-4">
+                <div className="p-2 rounded-full bg-brass-w/12 mr-4">
                   {feature.icon}
                 </div>
-                <p className="text-gray-700">{feature.text}</p>
+                <p className="text-walnut">{feature.text}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -238,7 +238,7 @@ const ValueProposition = () => {
               repeat: Infinity,
               ease: "linear",
             }}
-            className="absolute -bottom-20 -right-20 w-40 h-40 rounded-full border-8 border-dashed border-purple-200 opacity-20"
+            className="absolute -bottom-20 -right-20 w-40 h-40 rounded-full border-8 border-dashed border-brass-w/30 opacity-20"
           />
         </motion.div>
       </div>
