@@ -89,7 +89,7 @@ const ValueProposition = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-brass-w to-brass-w overflow-hidden relative">
+    <section className="py-16 bg-gradient-to-br from-brass-w/10 to-linen overflow-hidden relative">
       {/* Decorative elements */}
       <motion.div
         animate={{

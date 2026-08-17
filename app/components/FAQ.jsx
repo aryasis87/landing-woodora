@@ -83,7 +83,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-brass-w to-brass-w relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-br from-brass-w/10 to-linen relative overflow-hidden">
       {/* Decorative elements */}
       <motion.div
         animate={{
