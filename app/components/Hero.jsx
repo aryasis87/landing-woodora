@@ -50,7 +50,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-brass-w to-brass-w py-16 md:py-24 px-4 max-w-screen">
+    <section className="relative overflow-hidden bg-gradient-to-br from-linen-2 to-linen py-16 md:py-24 px-4 max-w-screen">
       <Head>
         <link rel="preload" href="/images/sofa.jpg" as="image" />
       </Head>

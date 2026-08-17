@@ -201,7 +201,7 @@ const Pricing = () => {
                     boxShadow: "0 5px 15px rgba(124, 58, 237, 0.3)"
                   }}
                   whileTap={{ scale: 0.98 }}
-                  className={`w-full py-3 rounded-full font-semibold ${plan.popular ? 'bg-gradient-to-r from-brass-w to-brass-w text-linen' : 'bg-linen text-walnut hover:bg-linen-2'}`}
+                  className={`w-full py-3 rounded-full font-semibold ${plan.popular ? 'bg-gradient-to-r from-brass-w to-brass-w text-linen' : 'bg-linen text-linen hover:bg-linen-2'}`}
                 >
                   Daftar Sekarang
                 </motion.button>
