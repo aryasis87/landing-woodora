@@ -47,18 +47,18 @@ const VideoSalesLetter = () => {
   const videoFeatures = [
     {
       icon: <Smile className="w-8 h-8 text-brass-w" />,
-      title: "Menyenangkan",
-      description: "Metode belajar seru seperti bermain game"
+      title: "Rapi",
+      description: "Sambungan kayu presisi di setiap sudut"
     },
     {
       icon: <Award className="w-8 h-8 text-brass-w" />,
       title: "Berkualitas",
-      description: "Kurikulum dirancang oleh ahli pendidikan"
+      description: "Kayu solid pilihan dengan finishing tahan lama"
     },
     {
       icon: <Users className="w-8 h-8 text-brass-w" />,
-      title: "Komunal",
-      description: "Belajar bersama komunitas kreatif"
+      title: "Buatan Tangan",
+      description: "Dikerjakan pengrajin berpengalaman"
     }
   ];
 
@@ -170,11 +170,11 @@ const VideoSalesLetter = () => {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brass-w to-brass-w">
                 Lihat Sendiri
               </span>{" "}
-              Keajaiban Belajar Kreatif!
+              Proses Pembuatan Furnitur Kami!
             </motion.h2>
             
             <motion.p className="text-lg text-grain mb-8">
-              Dalam video ini, Anda akan melihat bagaimana metode kami mengubah belajar menjadi petualangan yang menyenangkan untuk anak-anak dan komunitas kreatif.
+              Dalam video ini, Anda akan melihat bagaimana pengrajin kami memilih kayu, memotong, merakit, dan menyelesaikan setiap furnitur.
             </motion.p>
 
             <motion.div

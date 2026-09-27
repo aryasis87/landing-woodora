@@ -20,23 +20,23 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "Bagaimana cara mendaftar kursus kreatif ini?",
-      answer: "Kamu bisa mendaftar melalui tombol 'Daftar Sekarang' di atas, lalu ikuti panduan pendaftarannya. Prosesnya mudah dan menyenangkan!",
+      question: "Bagaimana cara memesan furnitur custom?",
+      answer: "Klik 'Pesan Sekarang', kirim ukuran ruangan dan contoh gaya yang Anda suka, lalu tim kami menyiapkan sketsa dan penawaran harga.",
       icon: <ClipboardEdit className="w-6 h-6 text-brass-w" />
     },
     {
-      question: "Apakah ada persyaratan usia untuk mengikuti kursus?",
-      answer: "Kursus kami dirancang untuk anak usia 6-15 tahun, tapi siapa saja yang ingin belajar kreatif bisa bergabung!",
+      question: "Kayu apa saja yang digunakan?",
+      answer: "Kami memakai jati, mahoni, dan walnut dari pemasok berizin, dengan finishing yang aman untuk dipakai di dalam rumah.",
       icon: <Cake className="w-6 h-6 text-brass-w" />
     },
     {
-      question: "Apa yang membuat kursus ini berbeda?",
-      answer: "Kami menggunakan metode belajar sambil bermain dengan pendekatan kreatif yang unik dan proyek-proyek seru!",
+      question: "Apa yang membuat Woodora berbeda?",
+      answer: "Setiap furnitur dikerjakan pengrajin dan bisa disesuaikan dengan ukuran ruangan Anda, bukan ukuran pabrik.",
       icon: <Sparkles className="w-6 h-6 text-brass-w" />
     },
     {
-      question: "Berapa lama durasi setiap sesi belajar?",
-      answer: "Setiap sesi berdurasi 60 menit dengan istirahat singkat di tengahnya agar tetap fokus dan menyenangkan!",
+      question: "Berapa lama proses pembuatan dan pengiriman?",
+      answer: "Produk siap stok dikirim dalam 3–7 hari. Furnitur custom selesai dalam 3–5 minggu, sudah termasuk perakitan di rumah.",
       icon: <Clock className="w-6 h-6 text-brass-w" />
     }
   ];
@@ -130,7 +130,7 @@ const FAQ = () => {
             yang Sering Ditanyakan
           </motion.h2>
           <motion.p variants={item} className="text-lg text-grain max-w-2xl mx-auto">
-            Temukan jawaban untuk pertanyaan-pertanyaan umum seputar program kreatif kami.
+            Temukan jawaban untuk pertanyaan-pertanyaan umum seputar produk dan layanan kami.
           </motion.p>
         </motion.div>
 

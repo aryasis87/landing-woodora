@@ -7,9 +7,9 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Budi Santoso",
-      role: "Orang Tua",
+      role: "Pemilik Rumah",
       avatar: "/images/pp1.png",
-      content: "Anak saya jadi lebih percaya diri setelah ikut kursus ini. Metode belajarnya menyenangkan!",
+      content: "Meja makan jati dari Woodora pas sekali dengan ruang makan kami yang sempit. Rapi dan kokoh!",
       rating: 5,
       color: "bg-brass-w/12",
       icon: <Smile className="w-6 h-6 text-brass-w" />
@@ -17,9 +17,9 @@ const Testimonials = () => {
     {
       id: 2,
       name: "Ani Wijaya",
-      role: "Guru SD",
+      role: "Desainer Interior",
       avatar: "/images/pp2.png",
-      content: "Siswa-siswa saya sangat antusias dengan program kreatif ini. Materinya sangat interaktif!",
+      content: "Sambungan kayunya rapi dan finishing-nya halus. Klien saya puas dengan hasilnya.",
       rating: 4,
       color: "bg-brass-w/12",
       icon: <Heart className="w-6 h-6 text-brass-w" />
@@ -29,7 +29,7 @@ const Testimonials = () => {
       name: "Rudi Hartono",
       role: "Founder Startup",
       avatar: "/images/pp3.png",
-      content: "Tim kami mendapatkan banyak inspirasi dari komunitas kreatif ini. Sangat recommended!",
+      content: "Kami memesan meja kerja dan rak untuk seluruh kantor. Tepat waktu dan sesuai desain!",
       rating: 5,
       color: "bg-brass-w/12",
       icon: <Rocket className="w-6 h-6 text-brass-w" />
@@ -123,7 +123,7 @@ const Testimonials = () => {
             Tentang Kami
           </h2>
           <p className="text-lg text-grain max-w-2xl mx-auto">
-            Lihat apa yang dikatakan peserta, orang tua, dan partner tentang pengalaman mereka!
+            Lihat apa kata pelanggan dan mitra tentang furnitur Woodora!
           </p>
         </motion.div>
 
@@ -249,7 +249,7 @@ const Testimonials = () => {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-3 bg-gradient-to-r from-brass-w to-brass-w text-linen rounded-full font-medium shadow-lg hover:shadow-xl transition-all"
           >
-            Bergabung Sekarang
+            Belanja Sekarang
           </motion.button>
         </motion.div>
       </div>

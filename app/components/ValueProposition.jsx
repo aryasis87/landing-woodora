@@ -1,12 +1,12 @@
 "use client"
 import { motion } from "framer-motion";
-import { Sparkles, Users, Rocket, Palette, BookOpen, Code } from "lucide-react";
+import { Sparkles, Users, Rocket, Ruler, Truck, ShieldCheck } from "lucide-react";
 
 const ValueProposition = () => {
   const valueCards = [
     {
-      title: "Belajar Seru",
-      description: "Metode pembelajaran interaktif yang membuat belajar terasa seperti bermain",
+      title: "Kayu Solid Pilihan",
+      description: "Jati, mahoni, dan walnut dengan serat alami yang kuat dan tahan lama",
       icon: <Sparkles className="w-10 h-10 text-brass-w" />,
       color: "bg-brass-w/12",
       animation: {
@@ -19,8 +19,8 @@ const ValueProposition = () => {
       }
     },
     {
-      title: "Komunitas Kreatif",
-      description: "Bergabung dengan jaringan kreator muda dari seluruh Indonesia",
+      title: "Dibuat Sesuai Ukuran",
+      description: "Setiap furnitur bisa disesuaikan dengan ukuran dan gaya ruangan Anda",
       icon: <Users className="w-10 h-10 text-brass-w" />,
       color: "bg-brass-w/12",
       animation: {
@@ -33,8 +33,8 @@ const ValueProposition = () => {
       }
     },
     {
-      title: "Proyek Nyata",
-      description: "Hasilkan karya nyata yang bisa dibanggakan dan ditunjukkan",
+      title: "Dikerjakan Pengrajin",
+      description: "Pengrajin berpengalaman memastikan setiap sambungan rapi dan presisi",
       icon: <Rocket className="w-10 h-10 text-brass-w" />,
       color: "bg-brass-w/12",
       animation: {
@@ -50,16 +50,16 @@ const ValueProposition = () => {
 
   const features = [
     {
-      icon: <Palette className="w-6 h-6 text-brass-w" />,
-      text: "Aktivitas seni & kerajinan"
+      icon: <Ruler className="w-6 h-6 text-brass-w" />,
+      text: "Konsultasi ukuran & desain gratis"
     },
     {
-      icon: <BookOpen className="w-6 h-6 text-brass-w" />,
-      text: "Materi pembelajaran interaktif"
+      icon: <Truck className="w-6 h-6 text-brass-w" />,
+      text: "Pengiriman & perakitan di rumah"
     },
     {
-      icon: <Code className="w-6 h-6 text-brass-w" />,
-      text: "Pengenalan teknologi kreatif"
+      icon: <ShieldCheck className="w-6 h-6 text-brass-w" />,
+      text: "Garansi rangka 2 tahun"
     }
   ];
 
@@ -147,7 +147,7 @@ const ValueProposition = () => {
             variants={item}
             className="text-lg text-grain max-w-2xl mx-auto px-4"
           >
-            Kami menawarkan pengalaman belajar yang unik dan menyenangkan untuk mengembangkan kreativitas
+            Kami menghadirkan furnitur kayu yang indah, kokoh, dan dibuat khusus untuk rumah Anda
           </motion.p>
         </motion.div>
 
@@ -206,7 +206,7 @@ const ValueProposition = () => {
             variants={item}
             className="text-2xl font-bold text-center text-walnut mb-8"
           >
-            Apa saja yang akan kamu dapatkan?
+            Apa saja yang Anda dapatkan?
           </motion.h3>
           
           <motion.div

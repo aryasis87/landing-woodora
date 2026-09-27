@@ -5,46 +5,46 @@ import { Star, Gem, Rocket, Zap, CheckCircle2 } from "lucide-react";
 const Pricing = () => {
   const pricingPlans = [
     {
-      name: "Pemula",
+      name: "Konsultasi",
       price: "Rp 299.000",
-      duration: "/bulan",
+      duration: "/kunjungan",
       popular: false,
       features: [
-        "4 sesi per bulan",
-        "Akses materi dasar",
-        "Komunitas online",
-        "Sertifikat partisipasi"
+        "Kunjungan & pengukuran ruangan",
+        "Saran tata letak",
+        "Rekomendasi 3 produk",
+        "Voucher belanja 5%"
       ],
       color: "bg-brass-w/12",
       icon: <Star className="w-8 h-8 text-brass-w" />
     },
     {
-      name: "Kreator",
+      name: "Desain Ruang",
       price: "Rp 599.000",
-      duration: "/bulan",
+      duration: "/ruangan",
       popular: true,
       features: [
-        "8 sesi per bulan",
-        "Akses materi premium",
-        "Proyek kreatif",
-        "Feedback mentor",
-        "Komunitas eksklusif"
+        "Denah & sketsa 2D",
+        "Pilihan kayu & finishing",
+        "Daftar belanja lengkap",
+        "Revisi 2 kali",
+        "Voucher belanja 10%"
       ],
       color: "bg-brass-w/12",
       icon: <Gem className="w-8 h-8 text-brass-w" />
     },
     {
-      name: "Pro",
+      name: "Tata Lengkap",
       price: "Rp 999.000",
-      duration: "/bulan",
+      duration: "/ruangan",
       popular: false,
       features: [
-        "12 sesi per bulan",
-        "Akses semua materi",
-        "Proyek kolaborasi",
-        "Mentoring 1-on-1",
-        "Portfolio review",
-        "Sertifikat lengkap"
+        "Pratinjau 3D ruangan",
+        "Furnitur custom sesuai ukuran",
+        "Pengiriman & perakitan",
+        "Pendampingan desainer 1-on-1",
+        "Revisi tanpa batas",
+        "Garansi rangka 2 tahun"
       ],
       color: "bg-brass-w/12",
       icon: <Rocket className="w-8 h-8 text-brass-w" />
@@ -135,10 +135,10 @@ const Pricing = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-brass-w to-brass-w">
               Pilihan Paket
             </span>{" "}
-            Belajar
+            Tata Ruang
           </h2>
           <p className="text-lg text-grain max-w-2xl mx-auto">
-            Temukan paket yang paling sesuai dengan kebutuhan kreatif Anda!
+            Temukan paket yang paling sesuai untuk menata rumah Anda!
           </p>
         </motion.div>
 
@@ -203,7 +203,7 @@ const Pricing = () => {
                   whileTap={{ scale: 0.98 }}
                   className={`w-full py-3 rounded-full font-semibold ${plan.popular ? 'bg-gradient-to-r from-brass-w to-brass-w text-linen' : 'bg-linen text-linen hover:bg-linen-2'}`}
                 >
-                  Daftar Sekarang
+                  Pesan Sekarang
                 </motion.button>
 
                 {/* Decorative elements */}
@@ -234,7 +234,7 @@ const Pricing = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <p className="text-grain mb-6">Butuh paket khusus untuk komunitas atau sekolah?</p>
+          <p className="text-grain mb-6">Butuh paket khusus untuk kantor atau proyek hunian?</p>
           <motion.button
             whileHover={{ 
               scale: 1.03,

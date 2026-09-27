@@ -139,7 +139,7 @@ const CountdownTimer = () => {
             variants={item}
             className="text-lg text-grain max-w-2xl mx-auto"
           >
-            Daftar sekarang dan dapatkan potongan harga 30% sebelum promo berakhir!
+            Pesan sekarang dan dapatkan potongan harga 30% sebelum promo berakhir!
           </motion.p>
         </motion.div>
 
@@ -201,7 +201,7 @@ const CountdownTimer = () => {
             whileTap={{ scale: 0.98 }}
             className="px-8 py-3 bg-gradient-to-r from-brass-w to-brass-w text-linen rounded-full font-semibold shadow-lg hover:shadow-xl transition-all"
           >
-            Daftar Sekarang
+            Pesan Sekarang
           </motion.button>
           
           <motion.div

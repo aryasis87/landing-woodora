@@ -6,23 +6,23 @@ const PainSolution = () => {
   const painPoints = [
     {
       icon: <BookOpen className="w-8 h-8 text-brass-w" />,
-      title: "Materi Tidak Menarik",
-      description: "Pelajaran tradisional membosankan dan tidak interaktif",
-      solution: "Metode belajar kami menyenangkan seperti bermain game!",
+      title: "Ukuran Tidak Pas",
+      description: "Furnitur pabrikan sering terlalu besar atau terlalu kecil untuk ruangan",
+      solution: "Kami membuat furnitur sesuai ukuran ruangan Anda!",
       color: "bg-brass-w/12"
     },
     {
       icon: <Users className="w-8 h-8 text-brass-w" />,
-      title: "Tidak Ada Komunitas",
-      description: "Sulit menemukan teman dengan minat yang sama",
-      solution: "Bergabunglah dengan komunitas kreatif kami yang ramah!",
+      title: "Cepat Rusak",
+      description: "Bahan murah cepat goyah, berjamur, atau mengelupas",
+      solution: "Kayu solid pilihan dengan finishing yang tahan lama!",
       color: "bg-brass-w/12"
     },
     {
       icon: <Rocket className="w-8 h-8 text-brass-w" />,
-      title: "Tidak Ada Proyek Nyata",
-      description: "Hanya teori tanpa praktik langsung",
-      solution: "Belajar melalui proyek kreatif yang bisa dibanggakan!",
+      title: "Sulit Membayangkan Hasil",
+      description: "Susah menebak apakah furnitur akan cocok dengan ruangan",
+      solution: "Lihat sketsa dan pratinjau 3D sebelum produksi dimulai!",
       color: "bg-brass-w/12"
     }
   ];
@@ -117,7 +117,7 @@ const PainSolution = () => {
             </span>
           </h2>
           <p className="text-lg text-grain max-w-2xl mx-auto">
-            Kami memahami tantangan Anda dan memiliki solusi kreatif untuk mengatasinya!
+            Kami memahami tantangan menata rumah dan punya solusi untuk mengatasinya!
           </p>
         </motion.div>
 
