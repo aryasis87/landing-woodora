@@ -48,4 +48,4 @@ Foto suasana berlisensi **CC0 (domain publik)** dari StockSnap dan rawpixel; per
 
 ---
 
-Bagian dari koleksi 17 template landing page di [PortalLanding](https://portal-landing-seven.vercel.app). Dibuat oleh [PintuWeb](https://pintuweb.com), jasa pembuatan website.
+Bagian dari koleksi 17 template landing page di [PortalLanding](https://www.pintuweb.com/landing-page). Dibuat oleh [PintuWeb](https://www.pintuweb.com), jasa pembuatan website.
